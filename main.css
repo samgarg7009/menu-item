@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+}
+
+.navbar {
+    font-size: 23px;
+    background-color: rgb(249 112 69);
+    padding: 0.1px;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    background-color: #ffbf00;
+    padding: 14px;
+    display: inline;
+}
+
+.content {
+    margin: 10px 30px;
+}
+
+.heading {
+    font-size: 35px;
+    color: maroon;
+    padding-left: 10px;
+}
+
+.menu {
+    font-size: 22px;
+    padding-bottom: 30px;
+}
+
+.subheading {
+    font-size: 28px;
+    margin-left: 30px;
+}
+
+.food_image {
+    width: 450px;
+    height: 350px;
+    padding-bottom: 10px;
+}
+
+.food_wrapper {
+    padding-bottom: 30px;
+}
+
+.pic_name {
+    font-size: x-large;
+    color: maroon;
+    margin-bottom: 10px;
+    font-family: cursive;
+}
+
+.info {
+    font-size: 17px;
+    color: darkgreen;
+}

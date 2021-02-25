@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <title>my first web page</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div id="nav-placeholder">
+
+    </div>
+
+    <script>
+        $(function() {
+            $("#nav-placeholder").load("nav.html");
+        });
+    </script>
+
+    <div class="content">
+        <h1 class="heading">Todays food list is :</h1>
+        <ul class="menu">
+            <li><a href="#biryani">Biryani</a>
+            </li>
+            <li><a href="#pizza">Pizza</a>
+            </li>
+            <li><a href="#samosa">Samosa</a>
+            </li>
+            <li><a href="#burger">Burger</a>
+            </li>
+
+        </ul>
+        <div class="food_wrapper">
+            <p id="biryani" class="pic_name"><b>Biryani</b></p>
+            <img class="food_image" src="https://www.indianhealthyrecipes.com/wp-content/uploads/2019/02/chicken-biryani-recipe.jpg" alt="Biryani" />
+        </div>
+
+        <div class="food_wrapper">
+            <p id="pizza" class="pic_name"><b>Pizza</b></p>
+            <img class="food_image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCVhOH53SggIs61IwCnEbjJkFSs9uJ29WgPg&usqp=CAU" alt="Pizza" />
+        </div>
+
+        <div class="food_wrapper">
+            <p id="samosa" class="pic_name"><b>Samosa</b></p>
+            <img class="food_image" src="https://malvikajaswal.files.wordpress.com/2014/01/panjabi-samosa_011.jpg" alt="Samosa" />
+        </div>
+
+        <div class="food_wrapper">
+            <p id="burger" class="pic_name"><b>Burger</b></p>
+            <img class="food_image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_e6SnuD-EIANRD2gxg7CMrnCSVWpJwbp6VQ&usqp=CAU" alt="Burger" />
+        </div>
+
+        <p class="info">For more information
+            <a href="https://en.wikipedia.org/wiki/Solar_System#:~:text=The%20Solar%20System%20is%20the,and%20small%20Solar%20System%20bodies." target="_blank"> <b>click here</b></a>
+        </p>
+    </div>
+
+</body>
+
+</html>
