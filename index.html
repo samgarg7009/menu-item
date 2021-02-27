@@ -1,12 +1,13 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
     <title>my first web page</title>
     <link rel="stylesheet" href="main.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
-<body>
+<body class="index_edit">
     <!-- Navbar -->
     <div id="nav-placeholder">
 
@@ -18,44 +19,58 @@
         });
     </script>
 
-    <div class="content">
-        <h1 class="heading">Todays food list is :</h1>
-        <ul class="menu">
-            <li><a href="#biryani">Biryani</a>
-            </li>
-            <li><a href="#pizza">Pizza</a>
-            </li>
-            <li><a href="#samosa">Samosa</a>
-            </li>
-            <li><a href="#burger">Burger</a>
-            </li>
-
-        </ul>
-        <div class="food_wrapper">
-            <p id="biryani" class="pic_name"><b>Biryani</b></p>
-            <img class="food_image" src="https://www.indianhealthyrecipes.com/wp-content/uploads/2019/02/chicken-biryani-recipe.jpg" alt="Biryani" />
+    <form class="form">
+        <h1 style="text-align: center; color:maroon;">SIGN UP</h1>
+        <div>
+            <p class="input-label">Name:</p>
+            <input class="input-box" type="text" name="full-name" placeholder="Full Name" required>
         </div>
-
-        <div class="food_wrapper">
-            <p id="pizza" class="pic_name"><b>Pizza</b></p>
-            <img class="food_image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCVhOH53SggIs61IwCnEbjJkFSs9uJ29WgPg&usqp=CAU" alt="Pizza" />
+        <div>
+            <p class="input-label">Email:</p>
+            <input class="input-box" type="email" name="email" placeholder="Email Id" required>
         </div>
-
-        <div class="food_wrapper">
-            <p id="samosa" class="pic_name"><b>Samosa</b></p>
-            <img class="food_image" src="https://malvikajaswal.files.wordpress.com/2014/01/panjabi-samosa_011.jpg" alt="Samosa" />
+        <div>
+            <p class="input-label">Date of Birth:</p>
+            <input type="date" name="date">
         </div>
-
-        <div class="food_wrapper">
-            <p id="burger" class="pic_name"><b>Burger</b></p>
-            <img class="food_image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_e6SnuD-EIANRD2gxg7CMrnCSVWpJwbp6VQ&usqp=CAU" alt="Burger" />
+        <div>
+            <p class="input-label"> Password:</p>
+            <input class="input-box" type="password" name="password" required minlength="4" maxlength="10">
         </div>
-
-        <p class="info">For more information
-            <a href="https://en.wikipedia.org/wiki/Solar_System#:~:text=The%20Solar%20System%20is%20the,and%20small%20Solar%20System%20bodies." target="_blank"> <b>click here</b></a>
-        </p>
-    </div>
-
+        <div>
+            <p class="input-label"> Confirm Password:</p>
+            <input class="input-box" type="password" name="confirm-password" minlength="4" required maxlength="10">
+        </div>
+        <div>
+            <p class="input-label"> Gender:</p>
+            <input type="radio" name="male" value="male"> Male
+            <input type="radio" name="female" value="female"> Female
+            <input type="radio" name="Others" value="Others"> Others
+        </div>
+        <div>
+            <p class="input-label"> Security Question:</p>
+            <input list="technologies" name="technology">
+            <datalist id="technologies">
+                <option value="What is your pet name?">
+                <option value="What is your fav. book?">
+                <option value="What is your nickname?">
+                <option value="Who is your friend?">
+                <option value="What is your age?">
+                <option value="What is your fav. food?">
+                </datalist>
+        </div>
+        <div>
+            <br>
+            <textarea name="answer" rows="4" cols="25"></textarea>
+        </div>
+        <div>
+            <br>
+            <input type="checkbox" name="terms=conditions" value="accept" required>I agree to accept all the terms and conditons
+        </div>
+        <br>
+        <input id="btn-submit" type="submit" value="Register">
+        <input id="btn-reset" type="reset" value="Reset">
+    </form>
 </body>
 
 </html>

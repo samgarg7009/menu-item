@@ -1,6 +1,7 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
     <title>my first web page</title>
     <link rel="stylesheet" href="main.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
@@ -17,8 +18,166 @@
             $("#nav-placeholder").load("nav.html");
         });
     </script>
+    <div class="content">
+        <h1 class="heading">Todays food list is :</h1>
+        <ul class="menu">
+            <li><a href="#biryani">Biryani</a>
+            </li>
+            <li><a href="#pizza">Pizza</a>
+            </li>
+            <li><a href="#samosa">Samosa</a>
+            </li>
+            <li><a href="#burger">Burger</a>
+            </li>
 
-    <h1>Food</h1>
+        </ul>
+        <div class="food_wrapper">
+            <p id="biryani" class="pic_name"><b>Biryani</b></p>
+            <div class="description">
+                <img class="food_image" src="https://www.indianhealthyrecipes.com/wp-content/uploads/2019/02/chicken-biryani-recipe.jpg" alt="Biryani" />
+                <table class="submenu">
+                    <tr>
+                        <th>Types</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                    </tr>
+                    <tr>
+                        <td>Lucknowi Biryani</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Sindhi Biryani</td>
+                        <td>94</td>
+                    </tr>
+                    <tr>
+                        <td>Bombay Biryani</td>
+                        <td>80</td>
+                    </tr>
+                    <tr>
+                        <td>Mughlai Biryani</td>
+                        <td>80</td>
+                    </tr>
+                    <tr>
+                        <td>Calcutta Biryani</td>
+                        <td>80</td>
+                    </tr>
+                    <tr colspan="5">
+                        <td>
+                            SPECIAL OFFER
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+
+        <div class="food_wrapper">
+            <p id="pizza" class="pic_name"><b>Pizza</b></p>
+            <div class="description">
+                <img class="food_image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCVhOH53SggIs61IwCnEbjJkFSs9uJ29WgPg&usqp=CAU" alt="Pizza" />
+                <table class="submenu">
+                    <tr>
+                        <th>Types</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                    </tr>
+                    <tr>
+                        <td>Deluxe Veggie</td>
+                        <td>350</td>
+                    </tr>
+                    <tr>
+                        <td>VEGGIE PARADISE</td>
+                        <td>294</td>
+                    </tr>
+                    <tr>
+                        <td>CHEESE N CORN</td>
+                        <td>180</td>
+                    </tr>
+                    <tr>
+                        <td>Peppy Paneer</td>
+                        <td>280</td>
+                    </tr>
+                    <tr>
+                        <td>Margherita</td>
+                        <td>280</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="food_wrapper">
+            <p id="samosa" class="pic_name"><b>Samosa</b></p>
+            <div class="description">
+                <img class="food_image" src="https://malvikajaswal.files.wordpress.com/2014/01/panjabi-samosa_011.jpg" alt="Samosa" />
+                <table class="submenu">
+                    <tr>
+                        <th>Types</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                    </tr>
+                    <tr>
+                        <td>Chole Samosa</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Keema Samosa</td>
+                        <td>94</td>
+                    </tr>
+                    <tr>
+                        <td>Pasta Samosa</td>
+                        <td>80</td>
+                    </tr>
+                    <tr>
+                        <td>Cheese Samosa</td>
+                        <td>80</td>
+                    </tr>
+                    <tr>
+                        <td>Punjabi Samosa</td>
+                        <td>80</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="food_wrapper">
+            <p id="burger" class="pic_name"><b>Burger</b></p>
+            <div class="description">
+                <img class="food_image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_e6SnuD-EIANRD2gxg7CMrnCSVWpJwbp6VQ&usqp=CAU" alt="Burger" />
+                <table class="submenu">
+                    <tr>
+                        <th>Types</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                    </tr>
+                    <tr>
+                        <td>Veg burger</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Cheese burger</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>chicken burger</td>
+                        <td>200</td>
+                    </tr>
+                    <tr>
+                        <td>Crunchy chicken burger</td>
+                        <td>180</td>
+                    </tr>
+                    <tr>
+                        <td>Supreme Veggie Burger</td>
+                        <td>250</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <p class="info">For more information
+            <a href="https://en.wikipedia.org/wiki/Solar_System#:~:text=The%20Solar%20System%20is%20the,and%20small%20Solar%20System%20bodies." target="_blank"> <b>click here</b></a>
+        </p>
+    </div>
+
 </body>
 
 </html>
