@@ -52,24 +52,32 @@ body {
 
 #btn-submit {
     background-color: maroon;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 18px;
-    padding-right: 18px;
+    padding: 8px 18px;
     font-size: 15px;
     color: mintcream;
     border: none;
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
+}
+
+#btn-submit:hover {
+    background-color: mediumseagreen;
 }
 
 #btn-reset {
     background-color: maroon;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 18px;
-    padding-right: 18px;
+    padding: 8px 18px;
     font-size: 15px;
     color: mintcream;
     border: none;
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
+}
+
+#btn-reset:hover {
+    background-color: orangered;
 }
 
 .content {
@@ -94,7 +102,7 @@ body {
 
 .food_image {
     width: 450px;
-    height: 350px;
+    height: auto;
     padding-bottom: 10px;
 }
 
@@ -110,8 +118,9 @@ body {
 }
 
 .submenu {
-    width: 700px;
+    width: 750px;
     margin: 10px;
+    margin-top: 0;
     border: 1px solid black;
 }
 
@@ -133,7 +142,27 @@ body {
     flex-direction: row;
 }
 
+#btn-add {
+    font-size: 16px;
+    background-color: crimson;
+    color: cyan;
+    padding: 4px 8px;
+    border: 1px solid crimson;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+
+#btn-add:hover {
+    background-color: white;
+    color: maroon;
+}
+
 .info {
     font-size: 17px;
     color: darkgreen;
+}
+
+.info-page:hover {
+    color: red;
 }
