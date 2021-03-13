@@ -9,18 +9,33 @@ body {
 }
 
 .navbar {
+    width: 100%;
     font-size: 23px;
-    background-color: rgb(249 112 69);
+    background-color: darkred;
     padding: 0.1px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    bottom: 587px
 }
 
 .navbar ul {
     list-style: none;
 }
 
+.nav-edit {
+    color: gold;
+    font-size: 27px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.nav-edit:hover {
+    color: lightcyan
+}
+
 .navbar ul li {
-    background-color: #ffbf00;
-    padding: 14px;
+    padding: 12px;
     display: inline;
 }
 
@@ -30,7 +45,7 @@ body {
     padding: 24px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 16px;
+    margin-top: 85px;
     margin-bottom: 16px;
     border: #ccc;
 }
@@ -81,7 +96,8 @@ body {
 }
 
 .content {
-    margin: 10px 30px;
+    margin-left: 20px;
+    margin-top: 100px;
 }
 
 .heading {
@@ -93,6 +109,10 @@ body {
 .menu {
     font-size: 22px;
     padding-bottom: 30px;
+}
+
+.menu-hover:hover {
+    color: orangered;
 }
 
 .subheading {
@@ -118,7 +138,7 @@ body {
 }
 
 .submenu {
-    width: 750px;
+    width: 800px;
     margin: 10px;
     margin-top: 0;
     border: 1px solid black;
@@ -143,19 +163,37 @@ body {
 }
 
 #btn-add {
-    font-size: 16px;
+    font-size: 12px;
     background-color: crimson;
-    color: cyan;
-    padding: 4px 8px;
+    color: snow;
+    padding: 5px 7px;
     border: 1px solid crimson;
     border-radius: 4px;
     outline: none;
     cursor: pointer;
+    font-weight: 8px;
 }
 
 #btn-add:hover {
     background-color: white;
-    color: maroon;
+    color: black;
+}
+
+#btn-del {
+    font-size: 14px;
+    background-color: crimson;
+    color: snow;
+    padding: 5px 7px;
+    border: 1px solid crimson;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    font-weight: 9px;
+}
+
+#btn-del:hover {
+    background-color: white;
+    color: black;
 }
 
 .info {
